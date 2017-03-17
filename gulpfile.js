@@ -140,4 +140,4 @@ gulp.task('watch', ['serve', 'sass', 'clean-html', 'clean-scripts', 'scripts', '
 gulp.task('default', ['watch']);
 
 //'minifyHtml', not working?
-gulp.task('production', ['compresscss', 'compress']);
+gulp.task('production', [ 'minifyHtml', 'compresscss', 'compress']);
